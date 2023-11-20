@@ -1,15 +1,322 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #maa{
+            border: 2px solid green;
+            border-radius: 30px;
+        }
+        #ram{
+            text-decoration:none;
+            
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: relative;
+
+        }
+        #logo{
+            margin: 10px 34px;
+        }
+        #logo img{
+            margin: 3px 6px;
+            height:59px;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a{
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            color: white;
+        }
+        #navbar ul li a:hover{
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            color: black;
+            background-color: white;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            
+        }
+        #raam{
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .h-primany{
+            font-size: 2.8rem;
+            padding-top: 120px;
+            font-style: italic;
+        }
+        #home h1{
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: cursive;
+        }
+        .btn{
+            padding: 6px 20px;
+            border:  2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            margin-left: 170px;
+            cursor: pointer;
+
+        }
+        #rams{
+            padding-left: 0x;
+            color: black;
+        }
+        #ramsd{
+            padding-left: 0px;
+            color: black;
+            margin-left: 90px;
+        }
+        #services{ 
+            margin: 34px;
+            display: flex;        
+        }
+        .box{
+            border: 2px solid brown;
+            margin: 3px 6px;
+            text-align: center;
+            padding-top: 56px;
+            border-radius: 23px;
+            background-color: #dfd6d6;
+        }
+        .h-primary{
+            font-family: cursive;
+            margin-left: 520px;
+        }
+        .kya{
+            font-family: cursive;
+            margin-left: 410px;
+        }
+        .h-secondary{
+            font-family: cursive;
+            font-size: 2.3rem;
+        }
+        .satish{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .deepak{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: center;
+            text-align: center;
+            font-size: 3.5rem;
+        }
+        .sachin{
+            height: 160px;
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+            background: url('vegetable.jpeg');
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 231px;
+        }
+        #contact{
+            position: relative;
+
+        }
+        #content::before{
+            content: "";
+            position: absolute;
+            background: url('contact.jpeg');
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+            font-size: 1.2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #contact-box{
+            background: url('contact.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #ajay{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline mb-4">
-      Sachin Gate's Portfolio Website.
-      <!--  All working fine. -->
-  </h1>
-  <a class="px-4 py-2 bg-green-500 rounded-xl" href="about.html">About us page</a>
+      <nav id="navbar">
+        <div id="logo">
+            <img src="maa.jpg" alt="MyOnlineMeal.com" width="50px"
+            height="50px" id="maa">
+        </div>
+        <ul>
+            <li class="item"><a id="ram" href="#">Home</a></li>
+            <li class="item"><a id="ram" href="#">Services</a></li>
+            <li class="item"><a id="ram" href="#">About us</a></li>
+            <li class="item"><a id="ram" href="#"> contact us</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="home" style="background-image: url('tomato.jpg');"> 
+        
+        <div>
+            <h1 class="h-primany">Welcome to MyOnlineMeal</h1>
+            <p id="rams">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas non quam exercitationem.</p>
+            <p id="ramsd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <button class="btn"><a id="ajay" href="https://www.youtube.com/watch?v=msme0dulswQ">Order Now</a></button>
+        </div>
+    </div>
+    <section class="services-container">
+        <h1 class="kya">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="pizza.jpeg" alt="MyOmlineMeal">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="satish">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ratione aut non, tempora illum, vitae sunt eos consectetur mollitia possimus sequi pariatur facere quia! Possimus, dolore. Deleniti, dolorem. Non, nesciunt? Eos non fuga beatae.</p>
+            </div>
+            <div class="box">
+                <img src="momos.jpeg" alt="MyOmlineMeal">
+                <h2 class="h-secondary center">Food catering</h2>
+                <p class="satish">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ratione aut non, tempora illum, vitae sunt eos consectetur mollitia possimus sequi pariatur facere quia! Possimus, dolore. Deleniti, dolorem. Non, nesciunt? Eos non fuga beatae.</p>
+            </div>
+            <div class="box">
+                <img src="boy.jpeg" alt="MyOmlineMeal">
+                <h2 class="h-secondary center"> Order Now</h2>
+                <p class="satish">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ratione aut non, tempora illum, vitae sunt eos consectetur mollitia possimus sequi pariatur facere quia! Possimus, dolore. Deleniti, dolorem. Non, nesciunt? Eos non fuga beatae.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="deepak">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img class="sachin" src="apple.jpeg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img class="sachin" src="microsoft.png" alt="Our Client">
+            </div><div class="client-item">
+                <img class="sachin" src="skype.png" alt="Our Client">
+            </div><div class="client-item">
+                <img class="sachin" src="zomato.png" alt="Our Client">
+            </div>
+        </div>
+    </section>  
+    <Section id="contact" >
+        <h1 class="deepak" style="background: cyan;">contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+
+                </div>
+                <div class="form-group">
+                    <label for="name">e-mail:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your e-mail">
+
+                </div>
+                <div class="form-group">
+                    <label for="number">phone number:</label>
+                    <input type="number" name="name" id="number" placeholder="enter your phone number">
+
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea type="text" name="message" id="message" cols="30" rows="10"></textarea>
+
+                </div>
+            </form>
+        </div>
+
+    </Section>
+    <footer>
+        <div class="center">
+          <center> copyright &copy; www.MyOnlineMeal.com.All rights reserved</center>
+          
+        </div>
+    </footer>
 </body>
+<script>
+    alert("welcome ");
+    prompt("please enter your name.");
+    alert("Thanks visit on MyOnlineMeal.com ")
+    
+</script>
 </html>
